@@ -188,7 +188,20 @@ function containsSpace(str) {
 	}
 }
 
-function digits() {}
+function digits(num) {
+	arr = []
+	if (num < 0){
+		num *= -1
+	}
+	str = num.toString()
+	for (i = 0; i < str.length; i++){
+		arr.push(str[i] * 1)
+	}
+	return arr
+}
+
+test = digits(0)
+test
 
 function truncate(str) {
 	newStr = "";
