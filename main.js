@@ -83,7 +83,19 @@ function containsSpace() {}
 
 function digits() {}
 
-function truncate() {}
+function truncate(str) {
+	newStr = "";
+	if (str.length >= 15) {
+		for (i = 0; i <= 7; i++) {
+			newStr += str[i];
+		}
+		newStr;
+		newStr += "...";
+		return newStr;
+	} else {
+		return str;
+	}
+}{}
 
 function isValidPassword() {}
 
