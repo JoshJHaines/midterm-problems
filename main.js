@@ -150,7 +150,21 @@ function containsUpperCase(str) {
 
 function containsNonAlphanumeric() {}
 
-function containsSpace() {}
+function containsSpace(str) {
+	numSpaces = 0;
+	for (i = 0; i < str.length; i++) {
+		if (
+			str[i] === ' '
+		) {
+			numSpaces += 1;
+		}
+	}
+	if (numSpaces < 1) {
+		return false;
+	} else {
+		return true;
+	}
+}
 
 function digits() {}
 
