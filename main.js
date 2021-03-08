@@ -18,17 +18,18 @@ function isLong(str) {
 	}
 }
 
-//not working, continuing
 function exclaim(str) {
-	if (str.endsWith("!") !== "!") {
-		return (str += "!");
+	if (str.indexOf('!') === -1){
+		return str += '!'
 	}
-	if (str.endsWith("!!") === "!!") {
-		return str.text.slice(0, -1);
+	if (str.indexOf('!') === str.length -1){
+		return str
 	} else {
-		return str;
+		return str.slice(0 ,str.indexOf('!')+1);
 	}
 }
+test = exclaim("testing!!!")
+test
 
 function countWords(str) {
 	let wordCount = 1;
@@ -202,8 +203,6 @@ function digits(num) {
 	return arr
 }
 
-test = digits(0)
-test
 
 function truncate(str) {
 	newStr = "";
