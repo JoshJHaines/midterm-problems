@@ -148,7 +148,32 @@ function containsUpperCase(str) {
 	}
 }
 
-function containsNonAlphanumeric() {}
+function containsNonAlphanumeric(str) {
+	numLowers = 0;
+	for (i = 0; i < str.length; i++) {
+		if (
+			str[i] === ' ' ||
+			str[i] === '?' ||
+			str[i] === '#' ||
+			str[i] === '$' ||
+			str[i] === '%' ||
+			str[i] === '^' ||
+			str[i] === '&' ||
+			str[i] === '@' ||
+			str[i] === '*' ||
+			str[i] === '(' ||
+			str[i] === ')' ||
+			str[i] === '!'
+		) {
+			numLowers += 1;
+		}
+	}
+	if (numLowers < 1) {
+		return false;
+	} else {
+		return true;
+	}
+}
 
 function containsSpace(str) {
 	numSpaces = 0;
