@@ -40,7 +40,12 @@ function countWords(str) {
 	return wordCount;
 }
 
-function containsDigit() {}
+function containsDigit(str) {
+  if (str.length === 0){
+    return false
+  }
+  
+}
 
 function containsLowerCase() {}
 
