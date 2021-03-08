@@ -41,10 +41,23 @@ function countWords(str) {
 }
 
 function containsDigit(str) {
+  numDigits = 0
   if (str.length === 0){
     return false
+  } 
+  if (str.length !== 0) {
+    for (i = 0; i < str.length; i++){
+      if (str[i] !== isNaN){
+        numDigits += 1
+      }
+    }
   }
-  
+  if (numDigits > 0){
+    return true
+  } else {
+    return false
+  }
+
 }
 
 function containsLowerCase() {}
