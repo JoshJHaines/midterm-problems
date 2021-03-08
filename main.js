@@ -19,13 +19,13 @@ function isLong(str) {
 }
 
 function exclaim(str) {
-	if (str.indexOf('!') === -1){
-		return str += '!'
+	if (str.indexOf("!") === -1) {
+		return (str += "!");
 	}
-	if (str.indexOf('!') === str.length -1){
-		return str
+	if (str.indexOf("!") === str.length - 1) {
+		return str;
 	} else {
-		return str.slice(0 ,str.indexOf('!')+1);
+		return str.slice(0, str.indexOf("!") + 1);
 	}
 }
 
@@ -188,19 +188,18 @@ function containsSpace(str) {
 }
 
 function digits(num) {
-	arr = []
-	if (num < 0){
-		num *= -1
+	arr = [];
+	if (num < 0) {
+		num *= -1;
 	}
-	str = num.toString()
-	for (i = 0; i < str.length; i++){
-		if (str[i] !== '.'){
-			arr.push(str[i] * 1)
+	str = num.toString();
+	for (i = 0; i < str.length; i++) {
+		if (str[i] !== ".") {
+			arr.push(str[i] * 1);
 		}
 	}
-	return arr
+	return arr;
 }
-
 
 function truncate(str) {
 	newStr = "";
@@ -231,13 +230,13 @@ function isValidPassword(str) {
 }
 
 function onlyPunchy(arr) {
-	newArr = []
-	for (title of arr){
-		if (exclaim(title).length < 15){
-			newArr.push(exclaim(title))
+	newArr = [];
+	for (title of arr) {
+		if (exclaim(title).length < 15) {
+			newArr.push(exclaim(title));
 		}
 	}
-	return newArr
+	return newArr;
 }
 
 module.exports = {
