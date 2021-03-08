@@ -108,7 +108,7 @@ function containsLowerCase(str) {
 }
 
 function containsUpperCase(str) {
-	numLowers = 0;
+	numUppers = 0;
 	for (i = 0; i < str.length; i++) {
 		if (
 			str[i] === 'A' ||
@@ -138,10 +138,10 @@ function containsUpperCase(str) {
 			str[i] === 'Y' ||
 			str[i] === 'Z'
 		) {
-			numLowers += 1;
+			numUppers += 1;
 		}
 	}
-	if (numLowers < 1) {
+	if (numUppers < 1) {
 		return false;
 	} else {
 		return true;
