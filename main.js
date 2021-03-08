@@ -195,7 +195,9 @@ function digits(num) {
 	}
 	str = num.toString()
 	for (i = 0; i < str.length; i++){
-		arr.push(str[i] * 1)
+		if (str[i] !== '.'){
+			arr.push(str[i] * 1)
+		}
 	}
 	return arr
 }
