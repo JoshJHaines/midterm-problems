@@ -1,7 +1,8 @@
 function isEvenlyDivisible() {
 }
 
-function halfSquare() {
+function halfSquare(num) {
+  return num * num / 2
 }
 
 function isLong() {
