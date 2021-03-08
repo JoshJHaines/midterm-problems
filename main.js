@@ -5,10 +5,20 @@ function halfSquare(num) {
   return num * num / 2
 }
 
-function isLong() {
+function isLong(str) {
+  if (str.length >= 15){
+    return true
+  } else {
+    return false
+  }
 }
 
-function exclaim() {
+function exclaim(str) {
+  if (str.endsWith() !== '!'){
+    return str += '!'
+  } else {
+    return str
+  }
 }
 
 function countWords() {
