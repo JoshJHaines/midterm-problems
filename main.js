@@ -28,8 +28,6 @@ function exclaim(str) {
 		return str.slice(0 ,str.indexOf('!')+1);
 	}
 }
-test = exclaim("testing!!!")
-test
 
 function countWords(str) {
 	let wordCount = 1;
@@ -232,7 +230,16 @@ function isValidPassword(str) {
 	}
 }
 
-function onlyPunchy() {}
+function onlyPunchy(arr) {
+	newArr = []
+	newArr2 = []
+	for (title of arr){
+		if (exclaim(title).length < 15){
+			newArr.push(exclaim(title))
+		}
+	}
+	return newArr
+}
 
 module.exports = {
 	isEvenlyDivisible,
