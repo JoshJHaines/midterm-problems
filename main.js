@@ -232,7 +232,6 @@ function isValidPassword(str) {
 
 function onlyPunchy(arr) {
 	newArr = []
-	newArr2 = []
 	for (title of arr){
 		if (exclaim(title).length < 15){
 			newArr.push(exclaim(title))
